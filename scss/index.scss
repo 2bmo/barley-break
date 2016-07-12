@@ -1,0 +1,75 @@
+@import "mix.scss";
+body {
+  @include main;
+  text-align: center;
+  background: #d7b4b0;
+  color: #edebdf;
+  font-size: 3rem;
+  line-height: 1;
+}
+#field {
+  height : 408px;
+  width : 408px;
+  margin: 0 auto;
+}
+p {
+  height : 100px;
+  width : 100px;
+  float: left;
+  border: solid 1px #edebdf;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.active {
+  pointer-events: auto;
+}
+.active:hover {
+  background: #635e5c;
+}
+p.active:active {
+  background: #494542;
+}
+p, .start {
+  cursor: pointer;
+}
+#field, .start {
+  background: #766e6b;
+}
+.start {
+  font-size: 1.4rem;
+  padding: 8px 12px;
+  margin: 18px 28px;
+  display: block;
+  outline: none;
+  color: #edebdf;
+  border: solid 2px #edebdf;
+}
+.start:active {
+  border-color: #a4978e;
+  color: #766e6b;
+  background: #edebdf;
+}
+.empty {
+  background: #edebdf;
+}
+.empty:active {
+  background: #edebdf;
+}
+@include breakpoint($w500) {
+  body {
+    font-size: 2.4rem;
+  }
+  #field {
+    height : 288px;
+    width : 288px;
+  }
+  p {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+
