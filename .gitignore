@@ -1,0 +1,10 @@
+.idea
+*.iml
+node_modules
+bower_components
+res/img/view
+res/img/intermediate-svg
+scss/img
+res/css/mixed.css
+res/css/footer.css
+res/css/header.css
